@@ -31,6 +31,6 @@ jobs:
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       env:
         DB_CONNECTION: sqlite
-	MY_SECRET:${{ secrets.MY_SECRET}}
-        DB_DATABASE: database/database.sqlite
+	
+      DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
